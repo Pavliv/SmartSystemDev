@@ -1,7 +1,14 @@
-// Burger menu
+// Burger menu 
+//Start at 1024px resolution
 function myFunction(x) {
 	x.classList.toggle("change");
 }
+$(".burgerMenu").click(function () {
+	$(".navMenu").hide(1);
+	$(".navMenu").css("display", "block");
+	$(".navBar").hide(1);
+	$(".navBar").css("display", "block");
+});
 
 
 // Init caroseul

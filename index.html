@@ -5,12 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SSD - Pavliv</title>
 	<link rel="stylesheet" href="style/style.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700" rel="stylesheet">
+
+	<!-- Icons -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Carousel -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+	<!-- Modal window -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="classColor">
 	<div class="customContainer">
 		<nav class="headerNavigation">
 			<div class="burgerMenu" onclick="myFunction(this)">
@@ -34,7 +41,7 @@
 				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 				<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 				<div></div>
-				<a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+				<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user" aria-hidden="true"></i></a>
 			</div>
 		</nav>
 	</div>
@@ -152,31 +159,31 @@
 		<aside class="addContent">
 			<div class="socialList">
 				<ul>
-					<li>
+					<li class="classForHoverF">
 						<a href="#">
 							<i class="fa fa-facebook" aria-hidden="true"></i>
 							<span>Facebook</span>
 						</a>
 					</li>
-					<li>
+					<li class="classForHoverT">
 						<a href="#">
 							<i class="fa fa-twitter" aria-hidden="true"></i>
 							<span>Twitter</span>
 						</a>
 					</li>
-					<li>
+					<li class="classForHoverG">
 						<a href="#">
 							<i class="fa fa-google-plus" aria-hidden="true"></i>
 							<span>Google+</span>
 						</a>
 					</li>
-					<li>
+					<li class="classForHoverR">
 						<a href="#">
 							<i class="fa fa-rss" aria-hidden="true"></i>
 							<span>Rss Feeds</span>
 						</a>
 					</li>
-					<li>
+					<li class="classForHoverP">
 						<a href="#">
 							<i class="fa fa-pinterest-p" aria-hidden="true"></i>
 							<span>Pinterest</span>
@@ -184,22 +191,24 @@
 					</li>
 				</ul>
 			</div>
-			<div class="faceSection">
-				<i class="fa fa-facebook" aria-hidden="true"></i>
-				<div>
-					<span style="color: #fff;"><strong>156K</strong></span>
-					<span style="color: #fff;">Follow
-						<a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
-					</span>
+			<div class="widgets">
+				<div class="faceSection">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					<div>
+						<span style="color: #fff;"><strong>156K</strong></span>
+						<span style="color: #fff;">Follow
+							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+						</span>
+					</div>
 				</div>
-			</div>
-			<div class="twitSection">
-				<i class="fa fa-twitter" aria-hidden="true"></i>
-				<div>
-					<span style="color: #fff;"><strong>89K</strong></span>
-					<span style="color: #fff;">Following
-						<a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
-					</span>
+				<div class="twitSection">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					<div>
+						<span style="color: #fff;"><strong>89K</strong></span>
+						<span style="color: #fff;">Following
+							<a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+						</span>
+					</div>
 				</div>
 			</div>
 			<div class="signInSection">
@@ -249,8 +258,32 @@
 		</article>
 	</div>
 
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog modal-sm">
+		<!-- Modal content-->
+			<div class="modalContent">
+				<h4>Ask a Question</h4>
+				<form>
+					<input type="text" name="Name" placeholder="Your name">
+					<input type="email" name="Email" placeholder="hello@graphicburger.com">
+					<textarea></textarea>
+					<button>SUBMIT</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Modal window -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Carousel -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+	<!-- JS code -->
 	<script src="script/script.js"></script>
 </body>
 </html>

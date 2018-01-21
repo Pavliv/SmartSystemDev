@@ -4,6 +4,8 @@
 body {
 	margin: 0;
 	font-family: 'Monospace', sans-serif;
+}
+.classColor {
 	background-color: #4d6581;
 }
 .customContainer {
@@ -60,6 +62,7 @@ ul {
 /*MENU LIST*/
 .navMenu {
 	float: left;
+	display: none;
 }
 .navMenu li {
 	margin-right: 40px;
@@ -94,6 +97,9 @@ ul {
 	margin: 0 8px;
 	background-color: #dde2e4;
 }
+.navBar .fa-user {
+	font-size: 20px;
+}
 .navBar:last-child div {
 	margin-right: 13px;
 }
@@ -116,9 +122,10 @@ ul {
 }
 .mainRef {
 	background-color: #fff;
+	border-bottom: 1px solid #b2babe;
 }
 .mainRef li {
-	padding: 17.5px 18px 17.5px 24px;
+	padding: 17.3px 18px 17.5px 24px;
 	border-bottom: 1px solid #e1e5e7;
 }
 .mainRef i {
@@ -235,17 +242,43 @@ ul {
 .socialList span {
 	padding-left: 15px;
 }
-.socialList li:hover span {
+.socialList .classForHoverF:hover span {
+	color: #4d6baa;
+}
+.socialList .classForHoverF:hover i {
+	background-color: #4d6baa;
+}
+.socialList .classForHoverT:hover span {
 	color: #4fc6f8;
 }
-.socialList li:hover i {
+.socialList .classForHoverT:hover i {
 	background-color: #4fc6f8;
 }
+.socialList .classForHoverG:hover span {
+	color: #ea6060;
+}
+.socialList .classForHoverG:hover i {
+	background-color: #ea6060;
+}
+.socialList .classForHoverR:hover span {
+	color: #ff7010;
+}
+.socialList .classForHoverR:hover i {
+	background-color: #ff7010;
+}
+.socialList .classForHoverP:hover span {
+	color: #d73532;
+}
+.socialList .classForHoverP:hover i {
+	background-color: #d73532;
+}
 /*Facebook section*/
-.faceSection {
+.widgets {
 	width: 24%;
-	height: 150px;
 	float: right;
+}
+.faceSection {
+	height: 150px;
 	background-color: #4d6baa;
 	color: #fff;
 }
@@ -270,9 +303,7 @@ ul {
 /*Twitter section*/
 .twitSection {
 	margin-top: 14px;
-	width: 24%;
 	height: 150px;
-	float: right;
 	background-color: #4fc6f8;
 	color: #fff;
 }
@@ -465,4 +496,278 @@ li.slick-active button {
 	cursor: pointer;
 	outline: none;
 	font-size: 16px;
+}
+.modalContent {
+	background-color: #fff;
+	padding: 5px 0 10px 0;
+}
+.modalContent h4 {
+	padding: 20px 30px 10px 30px;
+	font-size: 20px;
+	color: #475055;
+}
+.modalContent input, textarea {
+	width: 90%;
+	margin:0 0 20px 15px;
+	border: 1px solid #dde2e4;
+	border-radius: 1px;
+	height: 40px;
+	padding: 0 18px;
+	font-size: 16px;
+}
+.modalContent textarea {
+	margin-left: 15px;
+	resize: none;
+	height: 100px;
+}
+.modalContent input[type="text"]::placeholder {
+	color: #a3abaf;
+}
+.modalContent button {
+	padding: 10px 20px;
+	margin: 15px;
+	border: none;
+	border-radius: 4px;
+	background-color: #ea6060;
+	color: #fff;
+}
+
+
+
+/*RESPONSIVE*/
+/*1024px*/
+@media (max-width: 1024px) {
+	.mainContent {
+		width: 100%;
+	}
+	.mainRef, .mainInfo {
+		width: 310px;
+	}
+	.rigthSide {
+		padding-bottom: 8.3px;
+	}
+	.socialList {
+		margin: 14px 0 0 0;
+		padding-top: 2px;
+	}
+	.socialList li {
+		padding: 14px 0;
+	}
+	.widgets {
+		float: left;
+		margin: 14px 22px;
+	}
+	.faceSection, .twitSection {
+		height: 166px;
+		padding-top: 5px;
+	}
+	.signInSection, .joinSection {
+		width: 48%;
+		margin: 14px 0 0 0;
+	}
+}
+
+/*960px*/
+@media (max-width: 960px) {
+	.headerNavigation {
+		height: 120px;
+	}
+	.burgerMenu {
+		padding: 20px 30px;
+	}
+	.bar1, .bar2, .bar3 {
+		width: 62px;
+		height: 8px;
+		margin: 14px 0;
+	}
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-15px, 15px);
+		transform: rotate(-49deg) translate(-15px, 15px);
+	}
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(0, 0);
+		transform: rotate(49deg) translate(0, 0);
+	}
+	.navMenu {
+		font-size: 32px;
+	}
+	.navBar i {
+		font-size: 40px;
+	}
+	.navBar div {
+		height: 120px;
+		width: 3px;
+	}
+	.headerNavigation i {
+		top: -40px;
+		margin: 0 25px;
+	}
+	.leftSide {
+		float: none;
+	}
+	.mainRef, .mainInfo {
+		width: 100%;
+		font-size: 40px;
+	}
+	.mainRef i {
+		font-size: 50px;
+	}
+	.mainRef .fa-envelope {
+		font-size: 42px;
+	}
+	.mainRef span {
+		margin-left: 30%;
+	}
+	.mainInfo i {
+		font-size: 60px;
+	}
+	.mainInfo .fa-envelope {
+		font-size: 42px;
+	}
+	.mainInfo p {
+		margin-left: 30%;
+	}
+	.aHeader {
+		font-size: 55px;
+	}
+	.aHeader i {
+		margin: 30px 20px 0 0;
+		font-size: 170px;
+	}
+	.aNested a {
+		font-size: 40px;
+	}
+	.socialList {
+		width: 55%;
+		font-size: 35px;
+	}
+	.socialList i {
+		margin: 0 30px 0 30px;
+		border-radius: 36px;
+	}
+	.socialList .fa-facebook {
+		padding: 20px 30px 16px 22px;
+	}
+	.socialList .fa-twitter {
+		padding: 18px 20px;
+	}
+	.socialList .fa-google-plus {
+		padding: 18px 14px;
+	}
+	.socialList .fa-rss {
+		padding: 18px 22px;
+	}
+	.socialList .fa-pinterest-p {
+		padding: 18px 24px;
+	}
+	.widgets {
+		width: 43%;
+		float: right;
+		margin: 14px 0;
+		font-size: 30px;
+	}
+	.faceSection, .twitSection {
+		height: 277.5px;
+	}
+	.faceSection .fa-facebook {
+		font-size: 85px;
+	}
+	.faceSection div {
+		padding-top: 70px;
+	}
+	.faceSection span:last-child {
+		padding-left: 100px;
+	}
+	.faceSection .fa-plus {
+		padding: 8px 10px;
+		border-radius: 24px;
+		font-size: 20px;
+	}
+	.twitSection .fa-twitter {
+		font-size: 85px;
+	}
+	.twitSection div {
+		padding-top: 55px;
+	}
+	.twitSection span:last-child {
+		padding-left: 80px;
+	}
+	.twitSection .fa-check-circle {
+		font-size: 45px;
+	}
+	.signInSection, .joinSection {
+		width: 100%;
+	}
+	.signInSection h2 {
+		font-size: 50px;
+		margin-bottom: 20px;
+		margin-top: 30px;
+	}
+	.signInSection span {
+		font-size: 30px;
+	}
+	.signInSection i {
+		font-size: 40px;
+	}
+	.signInSection a {
+		padding: 0 25px;
+	}
+	.signInSection .fa {
+		border-radius: 36px;
+	}
+	.signInSection .fa-facebook {
+		padding: 20px 30px 16px 24px;
+		background-color: #4d6baa;
+	}
+	.signInSection .fa-twitter {
+		padding: 18px 20px;
+		background-color: #4fc6f8;
+	}
+	.signInSection .fa-google-plus {
+		padding: 18px 12px;
+		background-color: #ea6060;
+	}
+	.signInSection .fa-linkedin {
+		padding: 18px 20px;
+		background-color: #238cc8;
+	}
+	.joinSection h2 {
+		margin: 30px 3px 28px 0;
+		font-size: 55px;
+	}
+	.joinSection span {
+		font-size: 22px;
+	}
+	.joinSection form {
+		margin: 50px 0 50px 0;
+	}
+	.joinSection input {
+		width: 65%;
+		height: 100px;
+		padding: 0 18px;
+		font-size: 36px;
+	}
+	.joinSection button {
+		padding: 28px 50px;
+		margin-left: 10px;
+		font-size: 36px;
+	}
+	.slick-arrow {
+		z-index: -1;
+	}
+	.slick-dots {
+		z-index: -1;
+	}
+	.infoInCarousel h2 {
+		font-size: 72px;
+	}
+	.infoInCarousel p {
+		font-size: 24px;
+	}
+	.infoInCarousel button {
+		height: 100px;
+		width: 300px;
+		top: 60%;
+		font-size: 36px;
+	}
 }
