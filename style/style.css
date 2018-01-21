@@ -20,7 +20,7 @@ body {
 	clear: both;
 }
 a {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 ul {
 	list-style: none;
@@ -71,9 +71,10 @@ ul {
 	display: inline;
 }
 .headerNavigation ul {
-	padding: 8px 0 0 50px;
+	padding: 20px 0 0 50px;
 }
 .headerNavigation a {
+	font-size: 16px;
 	color: #475055;
 }
 .headerNavigation a:hover {
@@ -88,6 +89,7 @@ ul {
 	position: relative;
 	top: -22px;
 	margin: 0 7px;
+	font-size: 16px;
 	color: #b2b9bd;
 }
 .navBar div {
@@ -125,7 +127,7 @@ ul {
 	border-bottom: 1px solid #b2babe;
 }
 .mainRef li {
-	padding: 17.3px 18px 17.5px 24px;
+	padding: 17.3px 18px 16px 24px;
 	border-bottom: 1px solid #e1e5e7;
 }
 .mainRef i {
@@ -137,6 +139,7 @@ ul {
 	padding-bottom: 4px;
 }
 .mainRef span {
+	font-size: 16px;
 	padding-left: 15px;
 	color: #475055;
 }
@@ -153,14 +156,14 @@ ul {
 /*Info section*/
 .mainInfo {
 	width: 225px;
-	padding: 5px 0 28px 0;
+	padding: 5px 0 20px 0;
 	background-color: #c5cdd1;
 	color: #fff;
 	font-size: 14px;
 	line-height: 1.4;
 }
 .mainInfo li {
-	padding: 27px 0 0 24px;
+	padding: 20px 0 0 24px;
 }
 .mainInfo i {
 	float: left;
@@ -175,7 +178,7 @@ ul {
 /*List of references*/
 .rigthSide {
 	padding-top: 15px;
-	padding-bottom: 8.3px;
+	padding-bottom: 6.8px;
 	background-color: #152840;
 	border-bottom: 1px solid #48657d;
 }
@@ -183,7 +186,7 @@ ul {
 	background-color: #263a54;
 }
 .rigthSide li {
-	padding: 8px 0;
+	padding: 7px 0;
 }
 .rigthSide a {
 	padding-left: 30px;
@@ -209,7 +212,7 @@ ul {
 	background-color: #fff;
 	width: 23.2%;
 	float: left;
-	padding-bottom: 2px;
+	padding: 20px 0 14px 0;
 	margin-left: 14px;
 }
 .socialList ul {
@@ -240,6 +243,7 @@ ul {
 	color: #475055;
 }
 .socialList span {
+	font-size: 16px;
 	padding-left: 15px;
 }
 .socialList .classForHoverF:hover span {
@@ -329,7 +333,7 @@ ul {
 	width: 48.4%;
 	float: right;
 	margin: 14px 0 0 14px;
-	padding-bottom: 10px;
+	padding-bottom: 8px;
 	background-color: #fff;
 	text-align: center;
 }
@@ -338,6 +342,7 @@ ul {
 	font-weight: 400;
 }
 .signInSection h2 {
+	font-size: 25px;
 	margin: 23px 3px 8px 0;
 }
 .signInSection span {
@@ -488,7 +493,7 @@ li.slick-active button {
 	position: absolute;
 	height: 50px;
 	width: 171px;
-	top: 39%;
+	top: 38%;
 	border: 1px solid #fff;
 	border-radius: 2px;
 	background-color: transparent;
@@ -497,6 +502,9 @@ li.slick-active button {
 	outline: none;
 	font-size: 16px;
 }
+
+
+/*MODAL WINDOW*/
 .modalContent {
 	background-color: #fff;
 	padding: 5px 0 10px 0;
@@ -531,7 +539,10 @@ li.slick-active button {
 	background-color: #ea6060;
 	color: #fff;
 }
-
+form .error {
+	color: #ea6060;
+	margin: 10px 0 10px 20px;
+}
 
 
 /*RESPONSIVE*/
@@ -544,14 +555,14 @@ li.slick-active button {
 		width: 310px;
 	}
 	.rigthSide {
-		padding-bottom: 8.3px;
+		padding-bottom: 6.8px;
 	}
 	.socialList {
 		margin: 14px 0 0 0;
 		padding-top: 2px;
 	}
 	.socialList li {
-		padding: 14px 0;
+		padding: 16px 0;
 	}
 	.widgets {
 		float: left;
@@ -588,11 +599,17 @@ li.slick-active button {
 		-webkit-transform: rotate(45deg) translate(0, 0);
 		transform: rotate(49deg) translate(0, 0);
 	}
-	.navMenu {
+	.navMenu ul {
+		margin-top: 20px;
+	}
+	.navMenu a {
 		font-size: 32px;
 	}
 	.navBar i {
 		font-size: 40px;
+	}
+	.navBar .fa-user {
+		font-size: 50px;
 	}
 	.navBar div {
 		height: 120px;
@@ -617,6 +634,7 @@ li.slick-active button {
 	}
 	.mainRef span {
 		margin-left: 30%;
+		font-size: 50px;
 	}
 	.mainInfo i {
 		font-size: 60px;
@@ -640,6 +658,9 @@ li.slick-active button {
 	.socialList {
 		width: 55%;
 		font-size: 35px;
+	}
+	.socialList li {
+		padding: 18.8px 0;
 	}
 	.socialList i {
 		margin: 0 30px 0 30px;
@@ -769,5 +790,26 @@ li.slick-active button {
 		width: 300px;
 		top: 60%;
 		font-size: 36px;
+	}
+	.modalContent {
+		width: 420px;
+	}
+	.modalContent h4 {
+		padding: 20px 30px;
+		font-size: 40px;
+	}
+	.modalContent input, textarea {
+		margin:0 0 30px 15px;
+		height: 70px;
+		padding: 0 18px;
+		font-size: 30px;
+	}
+	.modalContent textarea {
+		height: 180px;
+	}
+	.modalContent button {
+		padding: 30px 0;
+		width: 90%;
+		font-size: 25px;
 	}
 }
