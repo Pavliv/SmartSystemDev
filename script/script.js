@@ -28,26 +28,24 @@ $(document).ready(function () {
 });
 
 
-
-
 // jQuery Validation
 $(function() {
-  $("form[name='registration']").validate({
-    rules: {
-      name: "required",
-      question: "required",
-      email: {
-        required: true,
-        email: true
-      },
-    },
-    messages: {
-      name: "Please enter your name",
-      question: "Please enter your question",
-      email: "Please enter a valid email address"
-    },
-    submitHandler: function(form) {
-      form.submit();
-    }
-  });
+	$("form[name='registration']").validate({
+		rules: {
+			name: "required",
+			question: "required",
+			email: {
+				required: true,
+				email: true
+			},
+		},
+		messages: {
+			name: "Please enter your name",
+			question: "Please enter your question",
+			email: "Please enter a valid email address"
+		},
+		submitHandler: function(form) {
+			form.submit();
+		}
+	});
 });

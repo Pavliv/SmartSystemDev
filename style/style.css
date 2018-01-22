@@ -381,7 +381,7 @@ ul {
 	background-color: #fff;
 	margin: 14px 0 0 14px;
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 9.5px;
 }
 .joinSection h2, span {
 	color: #475055;
@@ -575,6 +575,12 @@ form .error {
 	.signInSection, .joinSection {
 		width: 48%;
 		margin: 14px 0 0 0;
+	}
+	.signInSection {
+		padding-bottom: 12px;
+	}
+	.joinSection {
+		padding-bottom: 4px;
 	}
 }
 
